@@ -40,7 +40,6 @@ function Card(props) {
       ${Math.log(distance) * 2}deg
     )
   `;
-    // console.log(center.y / 100);
     glowRef.current.style.backgroundImage = `
     radial-gradient(
       circle at

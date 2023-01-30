@@ -31,3 +31,16 @@ body {
 body::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
 }
+
+.container{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  }
+  
+  .flexer{
+    display: flex;
+  }
+  
+  .justify-cont-center{
+    justify-content: center;
+  }

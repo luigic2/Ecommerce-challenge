@@ -13,10 +13,6 @@
   height: -webkit-fill-available;
 }
 
-.container{
-margin-left: 2rem;
-margin-right: 2rem;
-}
 
 .Navbar-div{
   /* border-right: 1px solid white; */
@@ -34,7 +30,17 @@ padding: 50xp 0px;
 padding-bottom:15px ;
 
 }
+.Navbar-subdiv-text{
+  font-size: larger;
+  font-weight: 500;
+  color: #b3b3b3;
+  transition: color .3s;
+  text-align: center;
 
+}
+.buttons-div{
+  text-align: center;
+}
 a{
   margin-top: 25px;
   font-style: none;
@@ -55,14 +61,7 @@ a{
 .Navbar-subdiv-cat a {
   margin-bottom: 25px;
 }
-.Navbar-subdiv-text{
-  font-size: larger;
-  font-weight: 500;
-  color: #b3b3b3;
-  transition: color .3s;
-  text-align: center;
 
-}
 .Navbar-subdiv-undertext{
  
   font-weight: 500;
@@ -96,13 +95,7 @@ a{
 .starwars-img-changer{
   margin-top: 50px;
 }
-.flexer{
-  display: flex;
-}
 
-.justify-cont-center{
-  justify-content: center;
-}
 .size-buttons-1{
   background-color: #1e1e1e;
   border: none;
@@ -150,6 +143,7 @@ a{
   transition: color .3s;
 
 }
+
 .right-bar{
   width: -webkit-fill-available;
   height: 100vh;
@@ -158,14 +152,22 @@ a{
   height: 75px;
   background: #000;
 }
+
+.card-section{
+  overflow-y: scroll;
+  height: 85%;
+  box-shadow: inset 0 0 10px #000000;
+  perspective: 1000px;
+}
 .card-columns{
   display: grid;
   column-gap: 50px;
   width: -webkit-fill-available;
 }
-.buttons-div{
-  text-align: center;
-}
+
+
+
+
 @media (min-width: 769px) {
 .Navbar-div{
   display: flex;
@@ -203,11 +205,6 @@ a{
   grid-template-columns: auto auto auto auto;
   }
  }
-.card-section{
-  overflow-y: scroll;
-  height: 85%;
-  box-shadow: inset 0 0 10px #000000;
-  perspective: 1000px;
-}
+
 
   
