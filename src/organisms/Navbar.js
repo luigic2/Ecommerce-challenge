@@ -276,14 +276,14 @@ function Navbar() {
         />
 
         <div className="sections-spliter">
-          <div className="Navbar-div flexer">
+          <div className="Navbar-div ">
             <div className="Navbar-subdiv-cat">
               <div className="Navbar-subdiv-spacer container"></div>
 
               <a className="hover container" href="#">
                 <p className="Navbar-subdiv-text">Tamanhos</p>
               </a>
-              <div className="flexer justify-cont-center container">
+              <div className="buttons-div justify-cont-center container">
                 <a
                   className="hover size-buttons-1"
                   onClick={CardSecP}
