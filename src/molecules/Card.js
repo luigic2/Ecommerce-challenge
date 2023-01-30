@@ -1,18 +1,8 @@
 import "./Card.css";
 import "../imgs/font-awesome-4.7.0/css/font-awesome.min.css";
 import React, { useEffect, onMouseEnter, onMouseLeave, useRef } from "react";
+import CardContent from "../atoms/CardContent";
 
-// Função onde definimos os props que serão preenchidos com as informações do banco de dado
-function CardContent({data: {name, size, price}}) {
-  return (
-    <div>
-      <h2>{name}</h2>
-      <h2>{size}</h2>
-      <h2>{price}</h2>
-    </div>
-  );
-}
- 
 // Função onde juntamos os artifices graficos do cartão com seu conteudo e colocamos tudo dentro de uma div organizada e estilizada, além da requisição
 // dos props que serão entregues mais para frente
 function Card(props) {
