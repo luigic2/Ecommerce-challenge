@@ -15,6 +15,8 @@ var sizecomparison = "1";
 console.log(sizestate);
 var chosensize = "";
 
+// ------------------------------------------ Função que faz com que todos os cartões de roupas, com exceção dos de tamanho "P" sumam,
+// ------------------------------------------ e se clicado novamente reapareçam
 function CardSecP() {
   let cardident = 0;
   var cardcol = document.querySelector(".card-columns").childNodes;
@@ -23,7 +25,7 @@ function CardSecP() {
     for (cardident = 0; cardident < cardcol.length; cardident++) {
       cardcol[cardident].style.display = null;
     }
-    if (chosensize != "P" ) {
+    if (chosensize != "P") {
       for (let cardident = 0; cardident < cardcol.length; cardident++) {
         if (
           cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
@@ -63,7 +65,8 @@ function CardSecP() {
     }
   }
 }
-
+// ------------------------------------------ Função que faz com que todos os cartões de roupas, com exceção dos de tamanho "M" sumam,
+// ------------------------------------------ e se clicado novamente reapareçam
 function CardSecM() {
   let cardident = 0;
   var cardcol = document.querySelector(".card-columns").childNodes;
@@ -72,7 +75,7 @@ function CardSecM() {
     for (cardident = 0; cardident < cardcol.length; cardident++) {
       cardcol[cardident].style.display = null;
     }
-    if (chosensize != "M" ) {
+    if (chosensize != "M") {
       for (let cardident = 0; cardident < cardcol.length; cardident++) {
         if (
           cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
@@ -113,7 +116,8 @@ function CardSecM() {
   }
 }
 
-
+// ------------------------------------------ Função que faz com que todos os cartões de roupas, com exceção dos de tamanho "G" sumam,
+// ------------------------------------------ e se clicado novamente reapareçam
 function CardSecG() {
   let cardident = 0;
   var cardcol = document.querySelector(".card-columns").childNodes;
@@ -122,7 +126,7 @@ function CardSecG() {
     for (cardident = 0; cardident < cardcol.length; cardident++) {
       cardcol[cardident].style.display = null;
     }
-    if (chosensize != "G" ) {
+    if (chosensize != "G") {
       for (let cardident = 0; cardident < cardcol.length; cardident++) {
         if (
           cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
@@ -162,7 +166,8 @@ function CardSecG() {
     }
   }
 }
-
+// ------------------------------------------ Função que faz com que todos os cartões de roupas, com exceção dos de tamanho "GG" sumam,
+// ------------------------------------------ e se clicado novamente reapareçam
 function CardSecGG() {
   let cardident = 0;
   var cardcol = document.querySelector(".card-columns").childNodes;
@@ -171,7 +176,7 @@ function CardSecGG() {
     for (cardident = 0; cardident < cardcol.length; cardident++) {
       cardcol[cardident].style.display = null;
     }
-    if (chosensize != "GG" ) {
+    if (chosensize != "GG") {
       for (let cardident = 0; cardident < cardcol.length; cardident++) {
         if (
           cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
@@ -210,10 +215,9 @@ function CardSecGG() {
       }
     }
   }
-
-
 }
-
+// ------------------------------------------ Função que faz com que todos os cartões de roupas, com exceção dos de tamanho "XL" sumam,
+// ------------------------------------------ e se clicado novamente reapareçam
 function CardSecXL() {
   let cardident = 0;
   var cardcol = document.querySelector(".card-columns").childNodes;
@@ -222,7 +226,7 @@ function CardSecXL() {
     for (cardident = 0; cardident < cardcol.length; cardident++) {
       cardcol[cardident].style.display = null;
     }
-    if (chosensize != "XL" ) {
+    if (chosensize != "XL") {
       for (let cardident = 0; cardident < cardcol.length; cardident++) {
         if (
           cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
@@ -264,7 +268,6 @@ function CardSecXL() {
 }
 
 function Navbar() {
-
   return (
     <div className="Navbar-main">
       <header>
@@ -276,6 +279,7 @@ function Navbar() {
         />
 
         <div className="sections-spliter">
+          {/* Seção esquerda da tela (Na Resolução acima de um tablet) onde nos temos os filtros de tamanhos dos cartões */}
           <div className="Navbar-div ">
             <div className="Navbar-subdiv-cat">
               <div className="Navbar-subdiv-spacer container"></div>
@@ -322,7 +326,7 @@ function Navbar() {
               </div>
             </div>
           </div>
-
+          {/* Seção direita da tela (Na Resolução acima de um tablet) onde nos puxamos a seção de Cartões */}
           <div className="right-bar">
             <div className="misc-bar"></div>
             <div className="card-section">

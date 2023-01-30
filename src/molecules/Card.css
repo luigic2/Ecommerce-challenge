@@ -1,20 +1,11 @@
+/*--------------------------------------------Classes que Manipulam a parte estetica dos cartões-------------*/
+
 .Card-main{
     height: 350px;
     background-color: #b3b3b3;
     margin-top: 2rem;
     min-width: -webkit-fill-available;
     box-shadow: 0 1px 5px #00000099;
-    /* background-size: cover;
-  max-width: 500px;
-  margin: auto;
-  height: auto;
-  padding: 40px;
-  position: relative;
-  color: #fff;
-  transition: transform 0.1s ease;
-  transform-style: preserve-3d;
-  will-change: transform; */
-
   transition-duration: 300ms;
   transition-property: transform, box-shadow;
   transition-timing-function: ease-out;
@@ -27,20 +18,6 @@
   border-radius: 5px;
 }
 
-  /* .card-main:hover .card-hover {
-    transform: translateZ(12px);
-  }
-  .card-main::before {
-    content: "";
-    background: rgba(0, 0, 0, 0.4);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-  } */
 
 
 .Card-main:hover {
@@ -62,10 +39,3 @@
     padding: 25px;
 }
 
-/* 
-  .card-hover{
-    position: relative;
-  z-index: 1;
-  transition: transform 0.3s ease;
-  }
-   */

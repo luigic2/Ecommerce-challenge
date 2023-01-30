@@ -2,7 +2,8 @@ import "./Card.css";
 import "../imgs/font-awesome-4.7.0/css/font-awesome.min.css";
 import React, { useEffect, onMouseEnter, onMouseLeave, useRef } from "react";
 
-function Person({data: {name, size, price}}) {
+// Função onde definimos os props que serão preenchidos com as informações do banco de dado
+function CardContent({data: {name, size, price}}) {
   return (
     <div>
       <h2>{name}</h2>
@@ -12,9 +13,11 @@ function Person({data: {name, size, price}}) {
   );
 }
  
-
+// Função onde juntamos os artifices graficos do cartão com seu conteudo e colocamos tudo dentro de uma div organizada e estilizada, além da requisição
+// dos props que serão entregues mais para frente
 function Card(props) {
- 
+
+// Codigo da função do movimento do cartão e da luz projetada no mesmo ao passar o Mouse por cima dele  
   let bounds;
 
   const inputRef = useRef();
@@ -58,7 +61,7 @@ function Card(props) {
 
 
 
-
+// Local onde enviamos o cartão e seus agregados para quem importar ele
   return (
     <div
       className="Card-main"
@@ -69,7 +72,7 @@ function Card(props) {
       <div className="card-hover" ref={glowRef}>
         <div className="Card-filling ">
           
-        <Person data={props} />
+        <CardContent data={props} />
         </div>
       </div>
     </div>

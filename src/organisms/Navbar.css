@@ -1,8 +1,5 @@
-*{
-  margin: 0;
-  padding: 0;
-  max-width: 100vw;
-}
+
+/*--------------------------------------------Classes que Manipulam o contexto do Navbar.js de forma geral-------------*/
 
 .Navbar-main {
   text-align: center;
@@ -13,6 +10,8 @@
   height: -webkit-fill-available;
 }
 
+
+/*--------------------------------------------Classes que Manipulam o Lado esquerdo da divisão da tela (Na Resolução acima de um tablet)-------------*/
 
 .Navbar-div{
   /* border-right: 1px solid white; */
@@ -144,6 +143,9 @@ a{
 
 }
 
+/*--------------------------------------------Classes que manipulam a divisão direita da tela (Na Resolução acima de um tablet)------*/
+
+
 .right-bar{
   width: -webkit-fill-available;
   height: 100vh;
@@ -166,6 +168,7 @@ a{
 }
 
 
+/*--------------------------------------------Media Querrys que controlam as mudanças que ocorrem em relação ao crescimento da largura da tela--------*/
 
 
 @media (min-width: 769px) {

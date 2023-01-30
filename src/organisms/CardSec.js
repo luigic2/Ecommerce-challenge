@@ -3,6 +3,9 @@ import React, { useEffect, onMouseEnter, onMouseLeave, useRef, useState } from "
 import roupas from "../Arrays/roupas";
 import Card from "../molecules/Card.js";
 
+// Seção onde, para cada objeto dentro do array "roupa", nos Juntamos uma molecula "Card" com os Props que estão sendo requisitados pela molecula,
+// além de inserirmos uma classe na molecula
+
 function CardSec(){
 
 

@@ -16,7 +16,10 @@ import roupas from "./Arrays/roupas"
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <React.StrictMode>
+
+<React.StrictMode>
+          {/* Seção onde puxamos tudo no nosso codigo para que possa ser renderizado no root */}
+
     <div className="index-div">
       <Navbar />
     </div>
