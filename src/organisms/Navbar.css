@@ -155,6 +155,7 @@ a{
 }
 .right-bar{
   width: -webkit-fill-available;
+  height: 100vh;
 }
 .misc-bar{
   height: 75px;
