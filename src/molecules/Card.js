@@ -62,7 +62,7 @@ function Card(props) {
 
   return (
     <div
-      className="Card-main "
+      className="Card-main"
       ref={inputRef}
       onMouseLeave={removeListener}
       onMouseMove={rotateToMouse}

@@ -1,21 +1,269 @@
 import "./Navbar.css";
 import "../imgs/font-awesome-4.7.0/css/font-awesome.min.css";
-import "./Card.js";
-import Card from "./Card.js";
-import roupas from "../Arrays/roupas";
-import React, { useEffect, onMouseEnter, onMouseLeave, useRef } from "react";
+import "../molecules/Card.js";
+import CardSec from "./CardSec";
+import React, {
+  useEffect,
+  onMouseEnter,
+  onMouseLeave,
+  useRef,
+  useState,
+} from "react";
+let chosen = false;
+var sizestate = "";
+var sizecomparison = "1";
+console.log(sizestate);
+var chosensize = "";
 
-function CardSec(){
+function CardSecP() {
+  let cardident = 0;
+  var cardcol = document.querySelector(".card-columns").childNodes;
 
-  // return roupas.map((x)=> {if(x.size == "P"){return <Card name={x.name} size={x.size} price={x.price} />;}} );
-  return roupas.map((x)=> <Card name={x.name} size={x.size} price={x.price} /> );
+  if (chosen == true || chosensize != "P") {
+    for (cardident = 0; cardident < cardcol.length; cardident++) {
+      cardcol[cardident].style.display = null;
+    }
+    if (chosensize != "P" ) {
+      for (let cardident = 0; cardident < cardcol.length; cardident++) {
+        if (
+          cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
+            .childNodes[1].innerHTML != "P"
+        ) {
+          if (cardcol[cardident].style.display == "none") {
+            cardcol[cardident].style.display = null;
+          } else {
+            document.querySelector(".card-columns").childNodes[
+              cardident
+            ].style.display = "none";
+            chosen = true;
+            chosensize = "P";
+          }
+        } else {
+        }
+      }
+    }
+    chosen = false;
+  } else {
+    for (cardident = 0; cardident < cardcol.length; cardident++) {
+      if (
+        cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
+          .childNodes[1].innerHTML != "P"
+      ) {
+        if (cardcol[cardident].style.display == "none") {
+          cardcol[cardident].style.display = null;
+        } else {
+          document.querySelector(".card-columns").childNodes[
+            cardident
+          ].style.display = "none";
+          chosen = true;
+          chosensize = "P";
+        }
+      } else {
+      }
+    }
+  }
+}
+
+function CardSecM() {
+  let cardident = 0;
+  var cardcol = document.querySelector(".card-columns").childNodes;
+
+  if (chosen == true || chosensize != "M") {
+    for (cardident = 0; cardident < cardcol.length; cardident++) {
+      cardcol[cardident].style.display = null;
+    }
+    if (chosensize != "M" ) {
+      for (let cardident = 0; cardident < cardcol.length; cardident++) {
+        if (
+          cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
+            .childNodes[1].innerHTML != "M"
+        ) {
+          if (cardcol[cardident].style.display == "none") {
+            cardcol[cardident].style.display = null;
+          } else {
+            document.querySelector(".card-columns").childNodes[
+              cardident
+            ].style.display = "none";
+            chosen = true;
+            chosensize = "M";
+          }
+        } else {
+        }
+      }
+    }
+    chosen = false;
+  } else {
+    for (cardident = 0; cardident < cardcol.length; cardident++) {
+      if (
+        cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
+          .childNodes[1].innerHTML != "M"
+      ) {
+        if (cardcol[cardident].style.display == "none") {
+          cardcol[cardident].style.display = null;
+        } else {
+          document.querySelector(".card-columns").childNodes[
+            cardident
+          ].style.display = "none";
+          chosen = true;
+          chosensize = "M";
+        }
+      } else {
+      }
+    }
+  }
+}
+
+
+function CardSecG() {
+  let cardident = 0;
+  var cardcol = document.querySelector(".card-columns").childNodes;
+
+  if (chosen == true || chosensize != "G") {
+    for (cardident = 0; cardident < cardcol.length; cardident++) {
+      cardcol[cardident].style.display = null;
+    }
+    if (chosensize != "G" ) {
+      for (let cardident = 0; cardident < cardcol.length; cardident++) {
+        if (
+          cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
+            .childNodes[1].innerHTML != "G"
+        ) {
+          if (cardcol[cardident].style.display == "none") {
+            cardcol[cardident].style.display = null;
+          } else {
+            document.querySelector(".card-columns").childNodes[
+              cardident
+            ].style.display = "none";
+            chosen = true;
+            chosensize = "G";
+          }
+        } else {
+        }
+      }
+    }
+    chosen = false;
+  } else {
+    for (cardident = 0; cardident < cardcol.length; cardident++) {
+      if (
+        cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
+          .childNodes[1].innerHTML != "G"
+      ) {
+        if (cardcol[cardident].style.display == "none") {
+          cardcol[cardident].style.display = null;
+        } else {
+          document.querySelector(".card-columns").childNodes[
+            cardident
+          ].style.display = "none";
+          chosen = true;
+          chosensize = "G";
+        }
+      } else {
+      }
+    }
+  }
+}
+
+function CardSecGG() {
+  let cardident = 0;
+  var cardcol = document.querySelector(".card-columns").childNodes;
+
+  if (chosen == true || chosensize != "GG") {
+    for (cardident = 0; cardident < cardcol.length; cardident++) {
+      cardcol[cardident].style.display = null;
+    }
+    if (chosensize != "GG" ) {
+      for (let cardident = 0; cardident < cardcol.length; cardident++) {
+        if (
+          cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
+            .childNodes[1].innerHTML != "GG"
+        ) {
+          if (cardcol[cardident].style.display == "none") {
+            cardcol[cardident].style.display = null;
+          } else {
+            document.querySelector(".card-columns").childNodes[
+              cardident
+            ].style.display = "none";
+            chosen = true;
+            chosensize = "GG";
+          }
+        } else {
+        }
+      }
+    }
+    chosen = false;
+  } else {
+    for (cardident = 0; cardident < cardcol.length; cardident++) {
+      if (
+        cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
+          .childNodes[1].innerHTML != "GG"
+      ) {
+        if (cardcol[cardident].style.display == "none") {
+          cardcol[cardident].style.display = null;
+        } else {
+          document.querySelector(".card-columns").childNodes[
+            cardident
+          ].style.display = "none";
+          chosen = true;
+          chosensize = "GG";
+        }
+      } else {
+      }
+    }
+  }
+
 
 }
 
+function CardSecXL() {
+  let cardident = 0;
+  var cardcol = document.querySelector(".card-columns").childNodes;
+
+  if (chosen == true || chosensize != "XL") {
+    for (cardident = 0; cardident < cardcol.length; cardident++) {
+      cardcol[cardident].style.display = null;
+    }
+    if (chosensize != "XL" ) {
+      for (let cardident = 0; cardident < cardcol.length; cardident++) {
+        if (
+          cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
+            .childNodes[1].innerHTML != "XL"
+        ) {
+          if (cardcol[cardident].style.display == "none") {
+            cardcol[cardident].style.display = null;
+          } else {
+            document.querySelector(".card-columns").childNodes[
+              cardident
+            ].style.display = "none";
+            chosen = true;
+            chosensize = "XL";
+          }
+        } else {
+        }
+      }
+    }
+    chosen = false;
+  } else {
+    for (cardident = 0; cardident < cardcol.length; cardident++) {
+      if (
+        cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
+          .childNodes[1].innerHTML != "XL"
+      ) {
+        if (cardcol[cardident].style.display == "none") {
+          cardcol[cardident].style.display = null;
+        } else {
+          document.querySelector(".card-columns").childNodes[
+            cardident
+          ].style.display = "none";
+          chosen = true;
+          chosensize = "XL";
+        }
+      } else {
+      }
+    }
+  }
+}
+
 function Navbar() {
-
-
-
 
   return (
     <div className="Navbar-main">
@@ -32,27 +280,43 @@ function Navbar() {
             <div className="Navbar-subdiv-cat">
               <div className="Navbar-subdiv-spacer container"></div>
 
-              <a
-                className="hover container"
-               
-                href="#"
-              >
+              <a className="hover container" href="#">
                 <p className="Navbar-subdiv-text">Tamanhos</p>
               </a>
               <div className="flexer justify-cont-center container">
-                <a className="hover size-buttons-1" draggable="true">
+                <a
+                  className="hover size-buttons-1"
+                  onClick={CardSecP}
+                  draggable="true"
+                >
                   <p className="Navbar-size-text">P</p>
                 </a>
-                <a className="hover size-buttons-1" draggable="true">
+                <a
+                  className="hover size-buttons-1"
+                  onClick={CardSecM}
+                  draggable="true"
+                >
                   <p className="Navbar-size-text">M</p>
                 </a>
-                <a className="hover size-buttons-1" draggable="true">
+                <a
+                  className="hover size-buttons-1"
+                  onClick={CardSecG}
+                  draggable="true"
+                >
                   <p className="Navbar-size-text">G</p>
                 </a>
-                <a className="hover size-buttons-2" draggable="true">
+                <a
+                  className="hover size-buttons-2"
+                  onClick={CardSecGG}
+                  draggable="true"
+                >
                   <p className="Navbar-size-text">GG</p>
                 </a>
-                <a className="hover size-buttons-2" draggable="true">
+                <a
+                  className="hover size-buttons-2"
+                  onClick={CardSecXL}
+                  draggable="true"
+                >
                   <p className="Navbar-size-text">XL</p>
                 </a>
               </div>
@@ -60,16 +324,11 @@ function Navbar() {
           </div>
 
           <div className="right-bar">
-            <div className="misc-bar">
-
-            </div>
+            <div className="misc-bar"></div>
             <div className="card-section">
-            <div className=" container  card-columns">
-           
-                
-              <CardSec />
-            
-            </div>
+              <div className=" container  card-columns">
+                <CardSec />
+              </div>
             </div>
           </div>
         </div>
