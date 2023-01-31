@@ -18,7 +18,7 @@ function CardSecP() {
         for (let cardident = 0; cardident < cardcol.length; cardident++) {
           if (
             cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
-              .childNodes[1].innerHTML != "P"
+              .childNodes[2].innerHTML != "P"
           ) {
             if (cardcol[cardident].style.display == "none") {
               cardcol[cardident].style.display = null;
@@ -38,7 +38,7 @@ function CardSecP() {
       for (cardident = 0; cardident < cardcol.length; cardident++) {
         if (
           cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
-            .childNodes[1].innerHTML != "P"
+            .childNodes[2].innerHTML != "P"
         ) {
           if (cardcol[cardident].style.display == "none") {
             cardcol[cardident].style.display = null;
@@ -68,7 +68,7 @@ function CardSecP() {
         for (let cardident = 0; cardident < cardcol.length; cardident++) {
           if (
             cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
-              .childNodes[1].innerHTML != "M"
+              .childNodes[2].innerHTML != "M"
           ) {
             if (cardcol[cardident].style.display == "none") {
               cardcol[cardident].style.display = null;
@@ -88,7 +88,7 @@ function CardSecP() {
       for (cardident = 0; cardident < cardcol.length; cardident++) {
         if (
           cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
-            .childNodes[1].innerHTML != "M"
+            .childNodes[2].innerHTML != "M"
         ) {
           if (cardcol[cardident].style.display == "none") {
             cardcol[cardident].style.display = null;
@@ -119,7 +119,7 @@ function CardSecP() {
         for (let cardident = 0; cardident < cardcol.length; cardident++) {
           if (
             cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
-              .childNodes[1].innerHTML != "G"
+              .childNodes[2].innerHTML != "G"
           ) {
             if (cardcol[cardident].style.display == "none") {
               cardcol[cardident].style.display = null;
@@ -139,7 +139,7 @@ function CardSecP() {
       for (cardident = 0; cardident < cardcol.length; cardident++) {
         if (
           cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
-            .childNodes[1].innerHTML != "G"
+            .childNodes[2].innerHTML != "G"
         ) {
           if (cardcol[cardident].style.display == "none") {
             cardcol[cardident].style.display = null;
@@ -169,7 +169,7 @@ function CardSecP() {
         for (let cardident = 0; cardident < cardcol.length; cardident++) {
           if (
             cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
-              .childNodes[1].innerHTML != "GG"
+              .childNodes[2].innerHTML != "GG"
           ) {
             if (cardcol[cardident].style.display == "none") {
               cardcol[cardident].style.display = null;
@@ -189,7 +189,7 @@ function CardSecP() {
       for (cardident = 0; cardident < cardcol.length; cardident++) {
         if (
           cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
-            .childNodes[1].innerHTML != "GG"
+            .childNodes[2].innerHTML != "GG"
         ) {
           if (cardcol[cardident].style.display == "none") {
             cardcol[cardident].style.display = null;
@@ -219,7 +219,7 @@ function CardSecP() {
         for (let cardident = 0; cardident < cardcol.length; cardident++) {
           if (
             cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
-              .childNodes[1].innerHTML != "XL"
+              .childNodes[2].innerHTML != "XL"
           ) {
             if (cardcol[cardident].style.display == "none") {
               cardcol[cardident].style.display = null;
@@ -239,7 +239,7 @@ function CardSecP() {
       for (cardident = 0; cardident < cardcol.length; cardident++) {
         if (
           cardcol[cardident].childNodes[0].childNodes[0].childNodes[0]
-            .childNodes[1].innerHTML != "XL"
+            .childNodes[2].innerHTML != "XL"
         ) {
           if (cardcol[cardident].style.display == "none") {
             cardcol[cardident].style.display = null;

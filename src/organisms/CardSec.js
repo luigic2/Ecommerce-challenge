@@ -11,7 +11,7 @@ function CardSec(){
 
   
 
-    return roupas.map((x)=> <Card className="card-class card-standard" name={x.name} size={x.size} price={x.price} /> );
+    return roupas.map((x)=> <Card className="card-class card-standard" name={x.name} size={x.size} price={x.price} img={x.img} /> );
 
   
 }

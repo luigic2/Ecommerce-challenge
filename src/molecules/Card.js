@@ -1,5 +1,4 @@
 import "./Card.css";
-import "../imgs/font-awesome-4.7.0/css/font-awesome.min.css";
 import React, { useEffect, onMouseEnter, onMouseLeave, useRef } from "react";
 import CardContent from "../atoms/CardContent";
 

@@ -7,9 +7,6 @@ import roupas from "./Arrays/roupas"
 
 
 
-
-
-
  
 
 

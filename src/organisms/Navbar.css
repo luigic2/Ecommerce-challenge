@@ -143,6 +143,11 @@ a{
 
 }
 
+.size-buttons-clicked:active {
+  background-color: #c2c2c2;
+
+}
+
 /*--------------------------------------------Classes que manipulam a divisão direita da tela (Na Resolução acima de um tablet)------*/
 
 

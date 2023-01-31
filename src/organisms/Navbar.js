@@ -1,5 +1,4 @@
 import "./Navbar.css";
-import "../imgs/font-awesome-4.7.0/css/font-awesome.min.css";
 import "../molecules/Card.js";
 import CardSec from "./CardSec";
 import React, {
@@ -12,7 +11,26 @@ import React, {
 import {CardSecP, CardSecM, CardSecG, CardSecGG, CardSecXL}  from "../functions/script"
 
 
+// var clicklablebutton = document.getElementsByClassName('.size-buttons-clicked');
+// console.log(clicklablebutton);
+// for(let queryfor = 0; queryfor < clicklablebutton; queryfor++){
+//   clicklablebutton[queryfor].addEventListener(onclick, () =>{
+//     if(clicklablebutton[queryfor].style.backgroundColor == "#c2c2c2"){
+//     clicklablebutton[queryfor].style.backgroundColor = "#1e1e1e"
+//   }else{
+//     clicklablebutton[queryfor].style.backgroundColor = "#c2c2c2"
+
+//   }
+
+//   })
+
+// }
+
+
+
+
 function Navbar() {
+  
   return (
     <div className="Navbar-main">
       <header>
@@ -34,35 +52,35 @@ function Navbar() {
               </a>
               <div className="buttons-div justify-cont-center container">
                 <a
-                  className="hover size-buttons-1"
+                  className="hover size-buttons-1 size-buttons-clicked"
                   onClick={CardSecP}
                   draggable="true"
                 >
                   <p className="Navbar-size-text">P</p>
                 </a>
                 <a
-                  className="hover size-buttons-1"
+                  className="hover size-buttons-1 size-buttons-clicked"
                   onClick={CardSecM}
                   draggable="true"
                 >
                   <p className="Navbar-size-text">M</p>
                 </a>
                 <a
-                  className="hover size-buttons-1"
+                  className="hover size-buttons-1 size-buttons-clicked"
                   onClick={CardSecG}
                   draggable="true"
                 >
                   <p className="Navbar-size-text">G</p>
                 </a>
                 <a
-                  className="hover size-buttons-2"
+                  className="hover size-buttons-2 size-buttons-clicked"
                   onClick={CardSecGG}
                   draggable="true"
                 >
                   <p className="Navbar-size-text">GG</p>
                 </a>
                 <a
-                  className="hover size-buttons-2"
+                  className="hover size-buttons-2 size-buttons-clicked"
                   onClick={CardSecXL}
                   draggable="true"
                 >
