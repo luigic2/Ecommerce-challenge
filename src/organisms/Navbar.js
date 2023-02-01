@@ -11,8 +11,10 @@ import React, {
 import {CardSecP, CardSecM, CardSecG, CardSecGG, CardSecXL}  from "../functions/script"
 
 
-// var clicklablebutton = document.getElementsByClassName('.size-buttons-clicked');
-// console.log(clicklablebutton);
+
+function Cardclean() {
+
+
 // for(let queryfor = 0; queryfor < clicklablebutton; queryfor++){
 //   clicklablebutton[queryfor].addEventListener(onclick, () =>{
 //     if(clicklablebutton[queryfor].style.backgroundColor == "#c2c2c2"){
@@ -25,7 +27,7 @@ import {CardSecP, CardSecM, CardSecG, CardSecGG, CardSecXL}  from "../functions/
 //   })
 
 // }
-
+}
 
 
 
