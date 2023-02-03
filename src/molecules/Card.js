@@ -1,20 +1,12 @@
 import "./Card.css";
-import "../imgs/font-awesome-4.7.0/css/font-awesome.min.css";
 import React, { useEffect, onMouseEnter, onMouseLeave, useRef } from "react";
+import CardContent from "../atoms/CardContent";
 
-function Person({data: {name, size, price}}) {
-  return (
-    <div>
-      <h2>{name}</h2>
-      <h2>{size}</h2>
-      <h2>{price}</h2>
-    </div>
-  );
-}
- 
-
+// Função onde juntamos os artifices graficos do cartão com seu conteudo e colocamos tudo dentro de uma div organizada e estilizada, além da requisição
+// dos props que serão entregues mais para frente
 function Card(props) {
- 
+
+// Codigo da função do movimento do cartão e da luz projetada no mesmo ao passar o Mouse por cima dele  
   let bounds;
 
   const inputRef = useRef();
@@ -40,7 +32,6 @@ function Card(props) {
       ${Math.log(distance) * 2}deg
     )
   `;
-    // console.log(center.y / 100);
     glowRef.current.style.backgroundImage = `
     radial-gradient(
       circle at
@@ -59,10 +50,10 @@ function Card(props) {
 
 
 
-
+// Local onde enviamos o cartão e seus agregados para quem importar ele
   return (
     <div
-      className="Card-main "
+      className="Card-main"
       ref={inputRef}
       onMouseLeave={removeListener}
       onMouseMove={rotateToMouse}
@@ -70,7 +61,7 @@ function Card(props) {
       <div className="card-hover" ref={glowRef}>
         <div className="Card-filling ">
           
-        <Person data={props} />
+        <CardContent data={props} />
         </div>
       </div>
     </div>

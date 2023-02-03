@@ -1,22 +1,38 @@
 import "./Navbar.css";
-import "../imgs/font-awesome-4.7.0/css/font-awesome.min.css";
-import "./Card.js";
-import Card from "./Card.js";
-import roupas from "../Arrays/roupas";
-import React, { useEffect, onMouseEnter, onMouseLeave, useRef } from "react";
+import "../molecules/Card.js";
+import CardSec from "./CardSec";
+import React, {
+  useEffect,
+  onMouseEnter,
+  onMouseLeave,
+  useRef,
+  useState,
+} from "react";
+import {CardSecP, CardSecM, CardSecG, CardSecGG, CardSecXL}  from "../functions/script"
 
-function CardSec(){
 
-  // return roupas.map((x)=> {if(x.size == "P"){return <Card name={x.name} size={x.size} price={x.price} />;}} );
-  return roupas.map((x)=> <Card name={x.name} size={x.size} price={x.price} /> );
 
+function Cardclean() {
+
+
+// for(let queryfor = 0; queryfor < clicklablebutton; queryfor++){
+//   clicklablebutton[queryfor].addEventListener(onclick, () =>{
+//     if(clicklablebutton[queryfor].style.backgroundColor == "#c2c2c2"){
+//     clicklablebutton[queryfor].style.backgroundColor = "#1e1e1e"
+//   }else{
+//     clicklablebutton[queryfor].style.backgroundColor = "#c2c2c2"
+
+//   }
+
+//   })
+
+// }
 }
 
+
+
 function Navbar() {
-
-
-
-
+  
   return (
     <div className="Navbar-main">
       <header>
@@ -28,48 +44,60 @@ function Navbar() {
         />
 
         <div className="sections-spliter">
-          <div className="Navbar-div flexer">
+          {/* Seção esquerda da tela (Na Resolução acima de um tablet) onde nos temos os filtros de tamanhos dos cartões */}
+          <div className="Navbar-div ">
             <div className="Navbar-subdiv-cat">
               <div className="Navbar-subdiv-spacer container"></div>
 
-              <a
-                className="hover container"
-               
-                href="#"
-              >
+              <a className="hover container" href="#">
                 <p className="Navbar-subdiv-text">Tamanhos</p>
               </a>
-              <div className="flexer justify-cont-center container">
-                <a className="hover size-buttons-1" draggable="true">
+              <div className="buttons-div justify-cont-center container">
+                <a
+                  className="hover size-buttons-1 size-buttons-clicked"
+                  onClick={CardSecP}
+                  draggable="true"
+                >
                   <p className="Navbar-size-text">P</p>
                 </a>
-                <a className="hover size-buttons-1" draggable="true">
+                <a
+                  className="hover size-buttons-1 size-buttons-clicked"
+                  onClick={CardSecM}
+                  draggable="true"
+                >
                   <p className="Navbar-size-text">M</p>
                 </a>
-                <a className="hover size-buttons-1" draggable="true">
+                <a
+                  className="hover size-buttons-1 size-buttons-clicked"
+                  onClick={CardSecG}
+                  draggable="true"
+                >
                   <p className="Navbar-size-text">G</p>
                 </a>
-                <a className="hover size-buttons-2" draggable="true">
+                <a
+                  className="hover size-buttons-2 size-buttons-clicked"
+                  onClick={CardSecGG}
+                  draggable="true"
+                >
                   <p className="Navbar-size-text">GG</p>
                 </a>
-                <a className="hover size-buttons-2" draggable="true">
+                <a
+                  className="hover size-buttons-2 size-buttons-clicked"
+                  onClick={CardSecXL}
+                  draggable="true"
+                >
                   <p className="Navbar-size-text">XL</p>
                 </a>
               </div>
             </div>
           </div>
-
+          {/* Seção direita da tela (Na Resolução acima de um tablet) onde nos puxamos a seção de Cartões */}
           <div className="right-bar">
-            <div className="misc-bar">
-
-            </div>
+            <div className="misc-bar"></div>
             <div className="card-section">
-            <div className=" container  card-columns">
-           
-                
-              <CardSec />
-            
-            </div>
+              <div className=" container  card-columns">
+                <CardSec />
+              </div>
             </div>
           </div>
         </div>

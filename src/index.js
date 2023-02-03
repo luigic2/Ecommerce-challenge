@@ -1,14 +1,9 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Navbar from "./organisms/Navbar";
-import Components from "./organisms/Components";
 import roupas from "./Arrays/roupas"
-
-
-
 
 
 
@@ -18,7 +13,10 @@ import roupas from "./Arrays/roupas"
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <React.StrictMode>
+
+<React.StrictMode>
+          {/* Seção onde puxamos tudo no nosso codigo para que possa ser renderizado no root */}
+
     <div className="index-div">
       <Navbar />
     </div>
